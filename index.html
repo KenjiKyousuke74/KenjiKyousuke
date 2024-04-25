@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <!-- css -->
+    <link id="mainStylesheet" rel="stylesheet" href="styles.css">
+    <title>WebMasterClass |kelompok 4</title>
+</head>
+<body>
+    <div class="button-container">
+        <button class="toggle-button" onclick="changeStylesheet()">Toggle CSS</button>
+    </div>
+
+    <script>
+        // Fungsi untuk mengubah atau menambahkan link CSS saat tombol diklik
+        function changeStylesheet() {
+            var currentStylesheet = document.getElementById('mainStylesheet').getAttribute('href');
+            var newStylesheet = (currentStylesheet === 'styles.css') ? 'styles2.css' : 'styles.css';
+            
+            document.getElementById('mainStylesheet').setAttribute('href', newStylesheet);
+        }
+    </script>
+
+<!-- Navbar Section -->
+<nav>
+    <div class="nav-logo">
+        <a href="#"><img src="../images/WMC Dark.png"></a>
+    </div>
+    <ul class="nav-links">
+            <li class="link"><a href="#home">Home</a></li>
+            <li id="link1" class="link"><a href="#features">Features</a></li>
+            <li id="link2" class="link"><a href="#program">Program</a></li>
+            <li id="link3" class="link"><a href="#about">About</a></li>
+        </ul>
+        <button class="btn" onclick="toggleMode()"><img src="../images/onlamp.svg" style="width:30px"></button>
+    </nav>
+    
+    <!-- Header Section -->
+    <header class="container">
+        <div class="content">
+            <span class="blur"></span>
+            <span class="blur"></span>
+            <h4>CREATE YOUR SITE LIKE A PRO</h4>
+            <H1>Hi!, We Are <span>WMC</span>, Web Master Class Developer</H1>
+            <p>
+                Selamat Datang di Website Kami! Web menuju perkembangan yang lebih baik untuk program kamu, 
+                raih masa depan dengan pemrograman bagi pemula untuk terus menuju program PRO menggunakan styling yang kece Abiss!!!
+            </p>
+            
+            <a href="home2.html" ><button class="btn">Get Started</button></a>
+        </div>
+        <div class="image">
+            <img src="../images/back.png">
+        </div>
+    </header>
+    
+    <!-- Feature Section -->
+    <section  class="container">
+        <h2 class="header">OUR FEATURES</h2>
+        <div class="features">
+            <div class="card">
+                <span><i class="ri-money-dollar-box-line"></i></span>
+                <h4>Free Tutorials</h4>
+                <p>
+                    Ayo Lihat Tutorial Kami! biar bisa bantu Kamu Ngoding
+                </p>
+                <a href="#">See Now <i class="ri-arrow-right-line"></i></a>
+            </div>
+            <div class="card">
+                <span><i class="ri-bug-line"></i></span>
+                <h4>Fix Your Bugs</h4>
+                <p>
+                    Punya Problem dengan Program yang kamu buat? Yukkk perbaiki disini
+                </p>
+                <a href="#">Fix Now <i class="ri-arrow-right-line"></i></a>
+            </div>
+            <div class="card">
+                <span><i class="ri-history-line"></i></span>
+                <h4>On Time Videos</h4>
+                <p>
+                    Selalu ada banyak hal yang kami lakukan untuk terus mengupgrade website mu, Kunjungi Sekarang!
+                </p>
+                <a href="#">View Now <i class="ri-arrow-right-line"></i></a>
+            </div>
+            <div class="card">
+                <span><i class="ri-shake-hands-line"></i></span>
+                <h4>Cooperation</h4>
+                <p>
+                    Ingin bergabung bersama kami? Ayooo kirimkan pesanmu ke E-mail kami sekarang!
+                </p>
+                <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Program Section -->
+    <section  class="container">
+        <h2 class="header">BAHASA PEMROGRAMAN</h2>
+        <p class="sub-header">
+            Kami menyediakan bahasa pemrograman paling populer untuk kamu loh! yuk belajar sekarang bersama kami Team Web Master Class!
+        </p>
+        <div id="prgcrd" class="progcrd">
+            <div class="card">
+                <div class="content">
+                    <h4>HTML</h4>
+                    <h3> Pemrograman HTML</h3>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        lebih mudah
+                    </p>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Fleksibel
+                    </p>
+                </div>
+                <button class="btn"><a href="HTML.html">Learn Now!</a></button>
+                <br>
+                <button class="btn">Video Tutorial</button>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h4>CSS</h4>
+                    <h3>Styling CSS</h3>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Tampilan kece abis
+                    </p>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Banyak animasi
+                    </p>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Ga bikin worry
+                    </p>
+                </div>
+                <button class="btn"><a href="CSS.html">Learn Now!</a></button>
+                <br>
+                <button class="btn">Video Tutorial</button>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h4>JS</h4>
+                    <h3>JavaScript</h3>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Fitur bervariasi
+                    </p>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Bisa Berinteraksi
+                    </p>
+                </div>
+                <button class="btn"><a href="JS.html">Learn Now!</a></button>
+                <br>
+                <button class="btn">Video Tutorial</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="container">
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <div class="column">
+            <div class="logo">
+                <img src="../images/WMC Dark.png">
+            </div>
+            <p>
+                Ayoo tunggu apalagi? ingin jadi Programmer yang handal? mari belajar dengan kami Team Web Master Class solusi tepat untuk kamu pencipta teknologi MASA DEPAN!
+            </p>
+            <div class="socials">
+                <a href="https://youtube.com/" target="_blank"><i class="ri-youtube-line"></i></a>
+                <a href="#https://www.instagram.com/" target="_blank"><i class="ri-instagram-line"></i></a>
+                <a href="https://discord.com/" target="_blank"><i class="ri-discord-line"></i></a>
+            </div>
+        </div>
+        <div class="column">
+            <h4>E-Learning</h4>
+            <a href="HTML.html">Html</a>
+            <a href="CSS.html">Css</a>
+            <a href="JS.html">Js</a>
+        </div>
+        <div class="column">
+            <h4>About Us</h4>
+            <a href="#">Blogs</a>
+            <a href="#">Channels</a>
+            <a href="#">Sponsors</a>
+        </div>
+        <div class="column">
+            <h4>Contact</h4>
+            <a href="https://wa.me/message/JJTIY5J3AMT4L1">Contact Us</a>
+            <a href="#">Privicy Policy</a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        Copyright &copy 2023 Kelompok04. All Rights Reserved.
+    </div>
+
+
+    <script src="../JS/script.js">
+    </script>
+</body>
+
+</html>
