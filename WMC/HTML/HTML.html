@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#WebMasterclass</title>
+  <!-- feather icon -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="../CSS/HTML.css" />
+</head>
+<body>
+<!-- navbar start -->
+<nav class="navbar">
+  <a href="index.html" class="navbar-logo"><img src="../images/LogoWMC100px.png" title="#WebMasterclass"></a>
+    <div class="navbar-nav">
+      <a href="#" title="HyperText Markup Language">Html</a>
+      <a href="CSS.html" title="Cascading Style Sheets">CSS</a>
+      <a href="JS.html" title="JavaScript">JS</a>
+    </div>
+    <div class="navbar-extra">
+      <a href="home2.html"><i data-feather="home"></i></a>
+      <a href="#" id="nav-side"><i data-feather="menu"></i></a>
+    </div>
+</nav>
+<!-- navbar end -->
+
+<!-- hero section start-->
+<section class="hero" id="html">
+  <div class="slideshow">
+    <div class="slide">
+      <img src="../images/html.png" alt="Gambar 1">
+    </div>
+    <div class="slide">
+      <img src="../images/html.png" alt="Gambar 2">
+    </div>
+  </div>
+<div class="container">
+  <h1>Pengenalan HTML</h1>
+      <div class="section-content">
+        <p>HTML (HyperText Markup Language) adalah bahasa markup standar yang digunakan untuk membuat struktur dan konten dari halaman web, HTML menggunakan serangkaian elemen dan tag untuk mendefinisikan bagian-bagian yang berbeda dalam halaman web.</p>
+        <p>Elemen HTML direpresentasikan oleh tag yang dikelilingi oleh tanda kurung sudut, Tag HTML juga dapat memiliki atribut yang memberikan informasi tambahan tentang elemen tersebut, Atribut ditentukan dalam tag pembuka dan dapat memodifikasi perilaku atau tampilan elemen tersebut.</p>
+          <p>Dokumen HTML memiliki struktur dasar sebagai berikut:</p>
+  <!-- html code box -->
+      <div class="head-html">html</div>
+        <textarea id="copy-text">
+          &lt;!DOCTYPE html&gt;
+          &lt;html&gt;
+            &lt;head&gt;
+              &lt;title&gt;Judul Halaman&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+              &lt;h1&gt; Konten halaman&lt;/h1&gt;
+              &lt;p&gt;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, doloribus?&lt;/p&gt;
+            &lt;/body&gt;
+          &lt;/html&gt;</textarea>
+        <button class="copy-button" onclick="copyToClipboard()" title="copy the code"><i data-feather="clipboard"></i></button>
+      </div>
+    <!-- html code table-->
+    <div class="table-html">
+      <table>
+        <thead>
+          <tr>
+            <th>Tag HTML</th>
+            <th>Fungsi</th>
+            <th>Keterangan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&lt;h1&gt; - &lt;h6&gt;</td>
+            <td>Heading</td>
+            <td>Menandai judul atau heading dengan level yang berbeda</td>
+          </tr>
+          <tr>
+            <td>&lt;p&gt;</td>
+            <td>Paragraf</td>
+            <td>Membuat paragraf teks</td>
+          </tr>
+          <tr>
+            <td>&lt;a&gt;</td>
+            <td>Tautan</td>
+            <td>Membuat tautan ke halaman atau sumber lain</td>
+          </tr>
+          <tr>
+            <td>&lt;img&gt;</td>
+            <td>Gambar</td>
+            <td>Menampilkan gambar di halaman web</td>
+          </tr>
+          <tr>
+            <td>&lt;ul&gt;</td>
+            <td>Daftar tak-berurutan</td>
+            <td>Membuat daftar tak-berurutan</td>
+          </tr>
+          <tr>
+            <td>&lt;ol&gt;</td>
+            <td>Daftar berurutan</td>
+            <td>Membuat daftar berurutan</td>
+          </tr>
+          <tr>
+            <td>&lt;table&gt;</td>
+            <td>Tabel</td>
+            <td>Membuat tabel untuk menampilkan data terstruktur</td>
+          </tr>
+          <tr>
+            <td>&lt;form&gt;</td>
+            <td>Formulir</td>
+            <td>Membuat formulir interaktif untuk mengumpulkan data</td>
+          </tr>
+          <tr>
+            <td>&lt;div&gt;</td>
+            <td>Kontainer</td>
+            <td>Memisahkan dan mengelompokkan elemen-elemen HTML</td>
+          </tr>
+          <tr>
+            <td>&lt;span&gt;</td>
+            <td>Elemen Inline</td>
+            <td>Membuat konten dengan gaya tertentu dalam teks</td>
+          </tr>
+        </tbody>
+      </table> 
+      <p>Dalam tabel di atas adalah beberapa tag umum pada html, masih banyak lagi tag pada html jika anda ingin mengetahui lebih lanjut kami sudah menyediakan nya <a href="#" class="cta-html">Disini.</a></p>
+    </div>
+</div>
+</section>
+<!-- hero section end-->
+    <script src="../JS/script2.js"></script>
+    <script>
+        feather.replace()
+      </script>
+</body>
+</html>
